@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Your Next Adventure</title>
+</head>
+<body>
+<header>
+    <h1>Discover Your Next Adventure</h1>
+    <p>Explore the world and find your perfect destination.</p>
+</header>
+<div class="container">
+    <section>
+        <h2>Join Our Travel Community</h2>
+        <form id="validationForm">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" required placeholder="Choose a password">
+            </div>
+            <button type="submit" class="btn">Join Now</button>
+            <p id="formMessage"></p>
+        </form>
+    </section>
+    <section>
+        <h2>Top Destinations</h2>
+        <div class="slider" id="slider">
+            <img src="https://avatars.mds.yandex.net/i?id=0afc1e4b13521fa3e2a78a501005e579_l-5886109-images-thumbs&n=13" alt="Beach">
+            <img src="https://avatars.mds.yandex.net/i?id=29f85b389589ea9f830e227523020409_l-5220849-images-thumbs&n=13" alt="Mountain">
+            <img src="https://t4.ftcdn.net/jpg/02/83/83/93/360_F_283839302_yt6JIsE96Pj4PydFDcBNKDUnuSpYB9h0.jpg" alt="City">
+        </div>
+        <button class="btn" id="prevBtn">Previous</button>
+        <button class="btn" id="nextBtn">Next</button>
+    </section>
+    <section>
+        <h2>Special Offers</h2>
+        <button class="btn" id="openModal">View Offers</button>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <p>Exclusive discounts on upcoming tours!</p>
+                <button class="btn" id="closeModal">Close</button>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
